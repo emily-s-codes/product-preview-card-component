@@ -109,6 +109,10 @@ p.p__button a {
     border-radius: 5px;
 }
 
+p.p__button a:hover {
+    background-color: #2C4321;
+}
+
 p.p__button img {
     padding-right: 10px;
 }
