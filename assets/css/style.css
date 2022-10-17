@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+@font-face {
+    font-family: 'Fraunces-Bold';
+    src: url("../fonts/Fraunces_9pt-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'Montserrat-Light';
+    src: url("../fonts/Montserrat-Light.ttf");
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url("../fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url("../fonts/Montserrat-Bold.ttf");
+}
+
+/* mobile-first */
+/* ==================
+    MAIN 375px
+=================== */
+html {
+    background-color: hsl(30, 38%, 92%);
+}
+
+main {
+    width: 300px;
+    margin: 50px auto 10px auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
+
+#image {
+    height: 220px;
+    background-image: url("../images/image-product-mobile.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#details {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h2 {
+    font-family: 'Montserrat-Medium', sans-serif;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 4px;
+}
+
+h1 {
+    font-family: 'Fraunces-Bold', serif;
+    font-size: 2.8rem;
+    color: hsl(212, 21%, 14%);
+    padding: 20px 0 10px 0;
+}
+
+#description {
+    font-size: 1.4rem;
+    font-family: 'Montserrat-Medium', sans-serif;
+    color: hsl(228, 12%, 48%);
+    line-height: 22px;
+    padding-bottom: 20px;
+}
+
+h3 {
+    font-family: 'Fraunces-Bold', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 2.8rem;
+}
+
+#prices {
+    display: flex;
+    width: 175px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#prices p {
+    text-decoration: line-through;
+    font-family: 'Montserrat-Medium', sans-serif;
+    color: hsl(228, 12%, 48%);
+}
+
+p.p__button a {
+    text-decoration: none;
+    font-family: 'Montserrat-Bold', sans-serif;
+    padding: 10px 80px;
+    margin: 20px auto;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%);
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+p.p__button img {
+    padding-right: 10px;
+}
+
+
+/* ==================
+    FOOTER
+=================== */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* ==================
+    small 601px+
+=================== */
+@media only screen and (min-width:601px) {
+    main {
+        margin: 80px auto 10px auto;
+    }
+}
+
+/* ==================
+    medium 901px+
+=================== */
+@media only screen and (min-width:901px) {
+    main {
+        width: 80%;
+        display: flex;
+        height: 400px;
+        margin: 150px auto 10px auto;
+    }
+
+    #image {
+        width: 50%;
+        height: auto;
+        background-image: url("../images/image-product-desktop.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
+
+    #details {
+        width: 50%;
+        padding: 30px;
+        margin: 0;
+    }
+
+    h1 {
+        padding: 10px 100px 10px 0;
+    }
+
+    p.p__button a {
+        justify-content: center;
+        padding: 10px 60px;
+    }
+}
+
+/* ==================
+    midway 940px+
+=================== */
+@media only screen and (min-width:940px) {
+    h1 {
+        display: inline-block;
+        width: 350px;
+    }
+
+    #description {
+        padding-right: 50px;
+    }
+
+    p.p__button a {
+        justify-content: center;
+        padding: 10px 100px;
+    }
+}
+
+/* ==================
+    DESKTOP 1201px+
+=================== */
+
+@media only screen and (min-width:1201px) {
+    main {
+        width: 50%;
+    }
+
+    p.p__button a {
+        justify-content: center;
+        padding: 10px 70px;
+    }
+}
+
+/* ==================
+    xl 1440px
+=================== */
+@media only screen and (min-width:1440px) {
+    main {
+        width: 40%;
+    }
+
+    h1 {
+        width: 225px;
+        padding: 10px 30px 10px 0;
+    }
+
+    #description {
+        padding-right: 10px;
+        line-height: 18px;
+    }
+
+    p.p__button a {
+        justify-content: center;
+        padding: 10px 60px;
+    }
+}
